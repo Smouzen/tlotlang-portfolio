@@ -5,12 +5,12 @@ const About = () => {
     <div name="about" className='w-full h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white'>
         
         <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
-            <div className='pb-10'>
+            <div className='pb-10 mt-30'>
                 <p className='text-4xl font-bold inline border-b-4 border-text-teal-400 mt-30'>About </p>
             </div>
 
 
-            <p className='text--xl md:text-xl mt-10 leading-8'>
+            <p className='text-sm md:text-xl mt-10 leading-8'>
                 I am a Sol Plaatje university ICT graduate, with Adv. Dip. ICT (Applications Development). 
                 During my academic studies,I learned the fundamental knowledge and discipline in Software design, development and testing.
           I also learned the importance of working to strict timescales, collaborating with other people to achieve an objective, and

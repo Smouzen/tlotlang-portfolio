@@ -6,7 +6,7 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 const NavBar = () => {
 
 
-  const [darkMode, setDarkMode] = useState("")
+  /*const [darkMode, setDarkMode] = useState("")*/
 
   const [nav, setNav] = useState(false);
   const links = [
@@ -29,11 +29,11 @@ const NavBar = () => {
   ];
 
   return (
-   <div className={darkMode ? "dark" : ""}>
+   <div /*className={darkMode ? "dark" : ""}*/>
  <div className="flex justify-between items-center w-full h-20 px-4 font-bold text-teal-600 bg-gradient-to-b  from-black-black  via-gray-900 to-black fixed dark:bg-white">
       <div>
       <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode) } className="cursor-pointer"
+                 /* onClick={() => setDarkMode(!darkMode) }*/ className="cursor-pointer"
                 />
       </div>
 

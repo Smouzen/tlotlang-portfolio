@@ -27,8 +27,8 @@ I am currently doing my Postgraduate Diploma in ICT (NQF8), </p>
             </div>
            
         </div>
-      <div className='px-10'>
-      <div className=' flex md:flex mx-auto bg-gradient-to-br from stroke-stone-900 rounded-full w-60 h-60 mt-30 overflow-hidden md:h-86 md:w-86' >
+      <div className='px-10 mb-10'>
+      <div className=' flex md:flex mx-auto bg-gradient-to-br from stroke-stone-900 rounded-full w-40 h-40 mt-30 overflow-hidden md:h-86 md:w-86' >
 
    
 <img src={smous} layout="fill" obejectFit="cover" alt="my profile" />
