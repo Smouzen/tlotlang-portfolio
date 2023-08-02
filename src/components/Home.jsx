@@ -14,7 +14,7 @@ const Home = () => {
         <h2 className ="text-2xl sm:text-4xl font-bold text-teal-300 p-10">
 
 My name is Tlotlang Smous,
-<p className ="text-xl sm:text-3xl font-bold text-teal-300 p-2"> Software Developer.</p>
+<p className ="text-xl sm:text-3xl font-bold text-teal-300 p-2"> Web Developer.</p>
 </h2>
 <p className='text-teal-300 py-4 leading-6'> I am a Sol Plaatje university ICT graduate, with Advanced Diploma ICT (Applications Development)
 I am currently doing my Postgraduate Diploma in ICT (NQF8), </p>
