@@ -1,7 +1,8 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaFacebook,FaTwitter, FaWhatsapp ,FaLinkedin} from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+
+
 
 const SocialLinks = () => {
   const links = [
@@ -9,41 +10,49 @@ const SocialLinks = () => {
       id: 1,
       child: (
         <>
-          LinkedIn <FaLinkedin size={30} />
+          Facebook <FaFacebook size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/tlotlang-smous-424564201/",
+      href: "https://web.facebook.com/LIVITYICTMahikeng/",
       style: "rounded-tr-md",
     },
     {
       id: 2,
       child: (
         <>
-          GitHub <FaGithub size={30} />
+          Twitter <FaTwitter size={30} />
         </>
       ),
-      href: "https://github.com/Smouzen",
+      href: "https://web.facebook.com/LIVITYICTMahikeng/",
     },
     {
       id: 3,
       child: (
         <>
-          Email <HiOutlineMail size={30} />
+          WhatsApp <FaWhatsapp size={30} />
         </>
       ),
-      href: "mailto:tlsmous09@yahoo.com",
+      href: "https://web.facebook.com/LIVITYICTMahikeng/",
     },
     {
       id: 4,
       child: (
         <>
-          Resume <BsFillPersonLinesFill size={30} />
+          LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "/smousresume.pdf",
-      style: "rounded-br-md",
-      download: true,
+      href: "https://web.facebook.com/LIVITYICTMahikeng/",
     },
+    {
+      id: 5,
+      child: (
+        <>
+          Email <HiOutlineMail size={30} />
+        </>
+      ),
+      href: "mailto:info@livityict.co.za",
+    },
+  
   ];
   return (
     <div className="hidden  lg:flex flex-col top-[35%] left-0 fixed">
@@ -59,7 +68,7 @@ const SocialLinks = () => {
           >
             <a
               href={href}
-              className="flex justify-between items-center w-full text-teal-300"
+              className="flex justify-between items-center w-full "
               download={download}
               target="_blank"
               rel="noreferrer"
