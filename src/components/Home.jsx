@@ -1,5 +1,5 @@
 import React from 'react';
-import smous from '../logopng/smous.png';
+import smous from '../logopng/smous.jpeg';
 import {MdOutlineKeyboardArrowRight} from 'react-icons/md';
 import {Link} from 'react-scroll'
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
 
         <div className=' flex flex-col justify-center h-full '>
 
-        <h2 className ="text-2xl sm:text-4xl font-bold text-teal-300 p-10">
+        <h2 className ="text-2xl sm:text-4xl font-bold text-teal-300 p-10 mt-20">
 
 My name is Tlotlang Smous,
 <p className ="text-xl sm:text-3xl font-bold text-teal-300 p-2"> Web Developer.</p>
@@ -28,7 +28,7 @@ I am currently doing my Postgraduate Diploma in ICT (NQF8), </p>
            
         </div>
       <div className='px-10 mb-10'>
-      <div className=' flex md:flex mx-auto bg-gradient-to-br from stroke-stone-900 rounded-full w-40 h-40 mt-30 overflow-hidden md:h-86 md:w-86' >
+      <div className=' flex md:flex mx-auto bg-gradient-to-br from stroke-stone-900 rounded-full w-50 h-50 mt-30 overflow-hidden md:h-126 md:w-126' >
 
    
 <img src={smous} layout="fill" obejectFit="cover" alt="my profile" />
