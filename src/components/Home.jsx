@@ -4,14 +4,14 @@ import {MdOutlineKeyboardArrowRight} from 'react-icons/md';
 import {Link} from 'react-scroll'
 const Home = () => {
   return (
-    <div name= "home" className=' h-screen w-full '>
+    <div name= "home" className=' h-screen w-full bg-gradient-to-b from-gray-700 to-black'>
         
 
         <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
 
         <div className=' flex flex-col justify-center h-full '>
 
-        <h2 className ="text-2xl sm:text-4xl font-bold text-teal-300 p-10 mt-20">
+        <h2 className ="text-2xl sm:text-4xl font-bold text-teal-300 p-10">
 
 My name is Tlotlang Smous,
 <p className ="text-xl sm:text-3xl font-bold text-teal-300 p-2"> Web Developer.</p>

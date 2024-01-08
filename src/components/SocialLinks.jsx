@@ -1,8 +1,7 @@
 import React from "react";
-import { FaFacebook,FaTwitter, FaWhatsapp ,FaLinkedin} from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-
-
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const SocialLinks = () => {
   const links = [
@@ -10,49 +9,41 @@ const SocialLinks = () => {
       id: 1,
       child: (
         <>
-          Facebook <FaFacebook size={30} />
+          LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://web.facebook.com/LIVITYICTMahikeng/",
+      href: "https://www.linkedin.com/in/tlotlang-smous-424564201/",
       style: "rounded-tr-md",
     },
     {
       id: 2,
       child: (
         <>
-          Twitter <FaTwitter size={30} />
+          GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://web.facebook.com/LIVITYICTMahikeng/",
+      href: "https://github.com/Smouzen",
     },
     {
       id: 3,
       child: (
         <>
-          WhatsApp <FaWhatsapp size={30} />
+          Email <HiOutlineMail size={30} />
         </>
       ),
-      href: "https://web.facebook.com/LIVITYICTMahikeng/",
+      href: "mailto:tlsmous09@yahoo.com",
     },
     {
       id: 4,
       child: (
         <>
-          LinkedIn <FaLinkedin size={30} />
+          Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "https://web.facebook.com/LIVITYICTMahikeng/",
+      href: "/smousresume.pdf",
+      style: "rounded-br-md",
+      download: true,
     },
-    {
-      id: 5,
-      child: (
-        <>
-          Email <HiOutlineMail size={30} />
-        </>
-      ),
-      href: "mailto:info@livityict.co.za",
-    },
-  
   ];
   return (
     <div className="hidden  lg:flex flex-col top-[35%] left-0 fixed">
@@ -68,7 +59,7 @@ const SocialLinks = () => {
           >
             <a
               href={href}
-              className="flex justify-between items-center w-full "
+              className="flex justify-between items-center w-full text-teal-300"
               download={download}
               target="_blank"
               rel="noreferrer"
