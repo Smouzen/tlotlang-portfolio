@@ -6,11 +6,11 @@ import andriod from "../logopng/andrpid.png";
 import arduino from "../logopng/arduino.png";
 import htmlcss from "../logopng/htmlcss.png";
 import javascir from "../logopng/js.png";
-import php from "../logopng/php.png";
+
 import reactpic from "../logopng/react.png";
 import tailwind from "../logopng/tailwind.png";
 import nextjs from "../logopng/nextjs.png";
-import angular from "../logopng/angular.png";
+
 
 const Experience = () => {
   const langs = [
@@ -44,45 +44,35 @@ const Experience = () => {
       title: "JAVASCRIPT",
       style: "shadow-yellow-300",
     },
+  
     {
       id: 6,
-      src: php,
-      title: "PHP",
-      style: "shadow-white",
-    },
-    {
-      id: 7,
       src: reactpic,
       title: "REACT",
       style: "shadow-teal-300",
     },
     {
-      id: 8,
+      id: 7,
       src: tailwind,
       title: "Tailwind CSS",
       style: "shadow-white",
     },
+   
     {
-      id: 9,
-      src: angular,
-      title: "Anguar",
-      style: "shadow-red-500",
-    },
-    {
-      id: 10,
+      id: 8,
       src: andriod,
       title: "ANDRIOD STUDIO",
       style: "shadow-blue-700",
     },
     {
-      id: 11,
+      id: 9,
       src: arduino,
       title: "ARDUINO",
       style: "shadow-teal-600",
     },
 
     {
-      id: 12,
+      id: 10,
       src: nextjs,
       title: "Next JS",
       style: "shadow-white",
@@ -101,7 +91,7 @@ const Experience = () => {
           <p className="py-6">I have acquired skills using various programming languages and libraries.</p>
         </div>
 
-        <div className="w-full grid grid-cols-3 sm:grid-cols-6 gap-5 text-center py-2 px-12 sm:px-0">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-5 text-center py-2 px-12 sm:px-0">
           {langs.map(({ id, src, title, style }) => (
             <div
               key={id}
