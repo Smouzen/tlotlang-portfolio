@@ -2,7 +2,10 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <div className="w-full h-screen bg-gradient-to-b  from-black via-gray-800 to-black">
+    <div
+      name="resume"
+      className="w-full h-screen bg-gradient-to-b  from-black via-gray-800 to-black"
+    >
       <div className="max-w-screen-md mx-auto p-4 flex flex-col justify-center w-full h-screen text-teal-200">
         <ol class="relative border-s border-gray-200 dark:border-gray-700">
           <li class="mb-10 ms-4">
@@ -21,7 +24,7 @@ const Resume = () => {
               database.
             </p>
             <a
-              href="#"
+              href="##"
               class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700 disabled:"
             >
               Learn more{" "}
@@ -57,7 +60,7 @@ const Resume = () => {
               front-end components to communicate
             </p>
             <a
-              href="https://smousestate.onrender.com/"
+              href="#https://smousestate.onrender.com/"
               class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
             >
               Learn more{" "}
@@ -87,10 +90,11 @@ const Resume = () => {
               Livity ICT Website🌎
             </h3>
             <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-              The main objective was to enhance my React skill. This is my slide project, just for practices purposes.
+              The main objective was to enhance my React skill. This is my slide
+              project, just for practices purposes.
             </p>
             <a
-              href="https://livityict.netlify.app/"
+              href="#https://livityict.netlify.app/"
               class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
             >
               Learn more{" "}
