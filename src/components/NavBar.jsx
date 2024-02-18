@@ -27,7 +27,7 @@ const NavBar = () => {
   ];
 
   return (
-    <header className="z-10 rounded-full">
+    <header className="z-20 rounded-full">
       <nav className="flex-wrap w-full h-40 fixed">
         <div className="flex justify-between items-center font-bold text-teal-600 bg-gradient-to-b  from-black-black  via-gray-900 to-black  dark:bg-white">
           <div className=" flex md:flex mx-auto bg-gradient-to-br from stroke-stone-900 rounded-full w-10 h-10 mt-30 ml-4 mt-4 overflow-hidden md:h-26 md:w-26">
@@ -38,7 +38,7 @@ const NavBar = () => {
             {links.map(({ id, link }) => (
               <li
                 key={id}
-                className="px-4 cursor-pointer capitalize font-medium text-tear-600 hover:scale-105 duration-200 z-20"
+                className="px-4 cursor-pointer capitalize font-semibold text-tear-600 hover:scale-105 duration-200 z-10 "
               >
                 <Link to={link} smooth duration={500}>
                   {link}
@@ -58,7 +58,7 @@ const NavBar = () => {
               {links.map(({ id, link }) => (
                 <li
                   key={id}
-                  className="px-4 cursor-pointer capitalize py-6 text-3xl"
+                  className="px-4 cursor-pointer capitalize py-6 text-3xl font-semibold"
                 >
                   <Link
                     onClick={() => setNav(!nav)}

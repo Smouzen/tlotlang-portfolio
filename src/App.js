@@ -4,7 +4,7 @@ import SocialLinks from "./components/SocialLinks.jsx";
 import About from "./components/About.jsx";
 import Experience from "./components/Experience.jsx";
 import Contacts from "./components/Contacts.jsx";
-
+import Resume from "./components/Resume.jsx"
 function App() {
   return (
     <div>
@@ -14,6 +14,7 @@ function App() {
 
         <About />
         <Experience />
+        <Resume /> 
         <Contacts />
         <SocialLinks />
       </main>
