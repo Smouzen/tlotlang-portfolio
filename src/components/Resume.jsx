@@ -12,17 +12,14 @@ const Resume = () => {
           <li class="mb-10 ms-4">
             <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
             <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-              Febraury 2024 - Present (📍)
+              March 2024 - Present (📍)
             </time>
             <h3 class="text-lg font-semibold text-white">
-              Employee Management System
+            Estate Agent 
             </h3>
-            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-              The system will enable the HR department to track down and
-              digitize employees' leaves, pay slips and grievance. The goal is
-              to eliminate paper-based method. I will be using React js for
-              front-end, Java Spring Boot as my back-end, then MySQL for the
-              database.
+            <p class="mb-4 text-base font-normal text-gray-400">
+             The main objective is to learn how deploy the MERN stack application to AWS EC2 using Github action.
+             I want to create a docker image and deploy it ti EC2 instance. This makes would make my learning jouney fun because I will learn more about CL/CD workflow
             </p>
             <a
               href="##"
@@ -48,11 +45,11 @@ const Resume = () => {
           </li>
           <li class="mb-10 ms-4">
             <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-              December 2023 - January 2024
+            <time class="mb-1 text-sm font-normal leading-none text-gray-400">
+              December 2023 - present(📍)
             </time>
             <h3 class="text-lg font-semibold text-white">Estate Agent⛪</h3>
-            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            <p class="mb-4 text-base font-normal text-gray-400">
               I am building a web application using MERN, for the students to
               find accommodation easily in the neighborhood. Web application
               uses MongoDB for a flexible and scalable data management. Express
@@ -90,9 +87,9 @@ const Resume = () => {
             <h3 class="text-lg font-semibold text-white">
               Livity ICT Website🌎
             </h3>
-            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-              The main objective was to enhance my React skill. This is my slide
-              project, just for practices purposes. 
+            <p class="mb-4 text-base font-normal text-gray-400">
+              The main objective was to enhance my React skill. This is my side
+              project, just for practices purposes. I want to learn react props and useState
             </p>
             <a
               href="https://livityict.netlify.app/"
