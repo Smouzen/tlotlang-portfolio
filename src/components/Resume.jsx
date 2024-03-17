@@ -14,12 +14,13 @@ const Resume = () => {
             <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               March 2024 - Present (📍)
             </time>
-            <h3 class="text-lg font-semibold text-white">
-            Estate Agent 
-            </h3>
+            <h3 class="text-lg font-semibold text-white">Estate Agent</h3>
             <p class="mb-4 text-base font-normal text-gray-400">
-             The main objective is to learn how deploy the MERN stack application to AWS EC2 using Github action.
-             I want to create a docker image and deploy it ti EC2 instance. This makes would make my learning jouney fun because I will learn more about CL/CD workflow
+              The main objective is to learn how deploy the MERN stack
+              application to AWS EC2 using Github action. I want to create a
+              docker image and deploy it ti EC2 instance. This makes would make
+              my learning jouney fun because I will learn more about CL/CD
+              workflow
             </p>
             <a
               href="##"
@@ -89,7 +90,8 @@ const Resume = () => {
             </h3>
             <p class="mb-4 text-base font-normal text-gray-400">
               The main objective was to enhance my React skill. This is my side
-              project, just for practices purposes. I want to learn react props and useState
+              project, just for practices purposes. I want to learn react props
+              and useState
             </p>
             <a
               href="https://livityict.netlify.app/"

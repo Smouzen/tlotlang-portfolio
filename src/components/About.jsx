@@ -14,23 +14,21 @@ const About = () => {
         </div>
 
         <p className="text-xs md:text-xl mt-10 leading-8">
-        During my academic studies at Sol Plaatje University,I learned the
+          During my academic studies at Sol Plaatje University,I learned the
           fundamental knowledge and discipline in Software design, development
           and testing. I also learned the importance of working to strict
           timescales, collaborating with other people to achieve an objective,
           and ensure that I demonstrate excellence attention to details in my
           projects. I am a quick learner who thives in fast-paced, dynamic
-          environment and <br/>
-          I am a passionate and driven aspiring Software Engineer/Developer with
-          a vision to create innovative solutions that positively impact the
-          world🌍. My journey into the world of coding began with curiosity, and
-          since then, I've been on an exciting quest to turn ideas into
-          functional and user-friendly software. My analytical mindset and
-          determination drive me to find elegant solutions to complex problems,
-          turning roadblocks into stepping stones💡. I'm committed to continuous
-          learning. I believe that embracing knowledge empowers me to innovate
-          and evolve.
-
+          environment and <br />I am a passionate and driven aspiring Software
+          Engineer/Developer with a vision to create innovative solutions that
+          positively impact the world🌍. My journey into the world of coding
+          began with curiosity, and since then, I've been on an exciting quest
+          to turn ideas into functional and user-friendly software. My
+          analytical mindset and determination drive me to find elegant
+          solutions to complex problems, turning roadblocks into stepping
+          stones💡. I'm committed to continuous learning. I believe that
+          embracing knowledge empowers me to innovate and evolve.
         </p>
         <p className="text--xl md:text-xl mt-10">
           {/* I always try to keep up with the latest technology, 

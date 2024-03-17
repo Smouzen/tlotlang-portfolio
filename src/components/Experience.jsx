@@ -11,7 +11,6 @@ import reactpic from "../logopng/react.png";
 import tailwind from "../logopng/tailwind.png";
 import nextjs from "../logopng/nextjs.png";
 
-
 const Experience = () => {
   const langs = [
     {
@@ -44,7 +43,7 @@ const Experience = () => {
       title: "JAVASCRIPT",
       style: "shadow-yellow-300",
     },
-  
+
     {
       id: 6,
       src: reactpic,
@@ -57,7 +56,7 @@ const Experience = () => {
       title: "Tailwind CSS",
       style: "shadow-white",
     },
-   
+
     {
       id: 8,
       src: andriod,
@@ -88,16 +87,17 @@ const Experience = () => {
           <p className="text-4xl font-bold border-b-4 border-teal-600 p-2 inline mx-auto">
             Experience
           </p>
-          <p className="py-6">I have acquired skills using various programming languages and libraries.</p>
+          <p className="py-6">
+            I have acquired skills using various programming languages and
+            libraries.
+          </p>
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-5 text-center py-2 px-12 sm:px-0">
           {langs.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={
-                `shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`
-              }
+              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
               <img src={src} alt="" className="w-6 sm:w-20 mx-auto" />
               <p className="text-xs mt-4">{title}</p>
