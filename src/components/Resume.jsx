@@ -17,10 +17,9 @@ const Resume = () => {
               <h3 className="text-lg font-semibold text-white">Estate Agent</h3>
               <p className="mb-4 text-base font-normal text-gray-400">
                 The main objective is to learn how deploy the MERN stack
-                application to AWS EC2 using Github action. I want to create a
-                docker image and deploy it ti EC2 instance. This makes would
-                make my learning jouney fun because I will learn more about
-                CL/CD workflow
+                application to Amazon EC2 using Github actions. I want to create a
+                docker image and deploy it to EC2 instance. This makes my learning jouney fun, because I will learn more about
+                CL/CD workflow and yml file, and how to create Image using docker.
               </p>
               <a
                 href="##"
@@ -58,7 +57,7 @@ const Resume = () => {
                 uses MongoDB for a flexible and scalable data management.
                 Express js to build back-end components, React js and Tailwind
                 css to build the front-end components and Node js for back-end
-                and front-end components to communicate
+                and front-end components to communicate.
               </p>
               <a
                 href="https://smousestate.onrender.com/"
