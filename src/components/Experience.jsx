@@ -10,6 +10,7 @@ import javascir from "../logopng/js.png";
 import reactpic from "../logopng/react.png";
 import tailwind from "../logopng/tailwind.png";
 import nextjs from "../logopng/nextjs.png";
+import Section from "./common/Section";
 
 const Experience = () => {
   const langs = [
@@ -80,20 +81,14 @@ const Experience = () => {
   return (
     <div
       name="experience"
-      className="w-full h-screen bg-gradient-to-b  from-black via-gray-800 to-black"
+      className="w-full h-full bg-black z-20 text-teal-600"
     >
-      <div className="max-w-screen-md mx-auto p-4 flex flex-col justify-center w-full h-screen text-teal-200">
-        <div className="mt-30">
-          <p className="text-4xl font-bold border-b-4 border-teal-600 p-2 inline mx-auto">
-            Experience
-          </p>
-          <p className="py-6">
-            I have acquired skills using various programming languages and
-            libraries.
-          </p>
-        </div>
+  <Section title=" Experience" subtitle={<p className="mt-6">I have acquired skills using various programming languages and
+            libraries.</p>} className="text-4xl font-bold border-b-4 border-teal-600 p-2 inline mx-auto">
+  <div className="max-w-screen-md mx-auto p-4 flex flex-col justify-center w-full text-teal-200">
+  
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-5 text-center py-2 px-12 sm:px-0">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-3 text-center py-2 sm:px-0">
           {langs.map(({ id, src, title, style }) => (
             <div
               key={id}
@@ -105,6 +100,8 @@ const Experience = () => {
           ))}
         </div>
       </div>
+  </Section>
+
     </div>
   );
 };

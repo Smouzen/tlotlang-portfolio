@@ -6,10 +6,10 @@ const Home = () => {
   return (
     <div
       name="home"
-      className=" h-screen w-full bg-gradient-to-b from-gray-700 to-black"
+      className="h-full w-full bg-black z-20"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className=" flex flex-col justify-center h-full ">
+        <div className=" flex flex-col justify-center">
           <h2 className="text-2xl sm:text-4xl font-bold text-teal-300 p-10 mt-20">
             Hello there😉, <br /> I am Tlotlang Smous,
             <p className="text-xl sm:text-3xl font-bold text-teal-300 p-2">
@@ -40,7 +40,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="px-10 mb-10">
+        <div className="px-10 mt-14">
           <div className=" flex md:flex mx-auto bg-gradient-to-br from stroke-stone-900 rounded-full w-50 h-50 mt-30 overflow-hidden md:h-126 md:w-126">
             <img
               src={smous}

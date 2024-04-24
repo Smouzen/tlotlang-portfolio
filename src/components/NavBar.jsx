@@ -31,9 +31,9 @@ const NavBar = () => {
   ];
 
   return (
-    <header className="z-20 rounded-full">
-      <nav className="flex-wrap w-full h-40 fixed">
-        <div className="flex justify-between items-center font-bold text-teal-600 bg-gradient-to-b  from-black-black  via-gray-900 to-black  dark:bg-white">
+    <header className="z-50 rounded-full flex-wrap w-full h-60 fixed mb-10">
+      
+        <div className="flex justify-between items-center font-bold text-teal-600 bg-black">
           <div className=" flex md:flex mx-auto bg-gradient-to-br from stroke-stone-900 rounded-full w-10 h-10 mt-30 ml-4 mt-4 overflow-hidden md:h-26 md:w-26">
             <img src={smous} layout="fill" obejectFit="cover" alt="logo" />
           </div>
@@ -42,7 +42,7 @@ const NavBar = () => {
             {links.map(({ id, link }) => (
               <li
                 key={id}
-                className="px-4 cursor-pointer capitalize font-semibold text-tear-600 hover:scale-105 duration-200 z-10 "
+                className="px-4 cursor-pointer capitalize font-semibold text-tear-600 hover:scale-105 duration-200 z-50 "
               >
                 <Link to={link} smooth duration={500}>
                   {link}
@@ -77,7 +77,7 @@ const NavBar = () => {
             </ul>
           )}
         </div>
-      </nav>
+      
     </header>
   );
 };
