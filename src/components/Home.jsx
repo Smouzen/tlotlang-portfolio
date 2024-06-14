@@ -14,7 +14,7 @@ const Home = () => {
             Hello there😉, <br /> I am Tlotlang Smous,
             <p className="text-xl sm:text-3xl font-bold text-teal-300 p-2">
               {" "}
-              Web Developer.
+              Software Developer.
             </p>
           </h2>
           <p className="text-teal-300 py-4 leading-6">
