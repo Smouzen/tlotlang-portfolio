@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes} from "react-icons/fa";
+import { FaBars, FaTimes, FaHome, FaUser, FaLaptopCode, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-scroll";
 import smous from "../logopng/smous.jpeg";
 
@@ -8,16 +8,16 @@ const NavBar = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   const links = [
-    { id: 1, link: "home" },
-    { id: 2, link: "about" },
-    { id: 3, link: "experience" },
-    { id: 4, link: "projects" },
-    { id: 5, link: "contact" },
+    { id: 1, link: "home", icon: <FaHome /> },
+    { id: 2, link: "about", icon: <FaUser /> },
+    { id: 3, link: "experience", icon: <FaLaptopCode /> },
+    { id: 4, link: "projects", icon: <FaProjectDiagram /> },
+    { id: 5, link: "contact", icon: <FaEnvelope /> },
   ];
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300bg-gray-900 text-white shadow-md rounded-lg bg-black `}
+      className={`fixed w-full z-50 transition-all duration-300 bg-gray-900 text-white shadow-md`}
     >
       <div className="max-w-screen-lg mx-auto flex justify-between items-center px-4 py-3">
         {/* Logo */}
@@ -30,11 +30,12 @@ const NavBar = () => {
 
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-6">
-          {links.map(({ id, link }) => (
+          {links.map(({ id, link, icon }) => (
             <li
               key={id}
-              className="capitalize font-medium hover:text-teal-500 transition duration-200"
+              className="capitalize font-medium flex items-center space-x-2 hover:text-teal-500 transition duration-200"
             >
+              {icon}
               <Link to={link} smooth duration={500}>
                 {link}
               </Link>
@@ -47,7 +48,7 @@ const NavBar = () => {
           onClick={() => setDarkMode(!darkMode)}
           className="hidden md:block p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition duration-200"
         >
-        
+         
         </button>
 
         {/* Mobile Menu Icon */}
@@ -66,11 +67,12 @@ const NavBar = () => {
             darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
           }`}
         >
-          {links.map(({ id, link }) => (
+          {links.map(({ id, link, icon }) => (
             <li
               key={id}
-              className="capitalize py-6 text-2xl font-medium hover:text-teal-500 transition duration-200"
+              className="capitalize py-6 text-2xl font-medium flex items-center space-x-2 hover:text-teal-500 transition duration-200"
             >
+              {icon}
               <Link
                 to={link}
                 smooth
@@ -81,7 +83,7 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
-         
+        
         </ul>
       )}
     </header>
