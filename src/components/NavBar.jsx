@@ -1,83 +1,89 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes} from "react-icons/fa";
 import { Link } from "react-scroll";
 import smous from "../logopng/smous.jpeg";
 
 const NavBar = () => {
-  /*const [darkMode, setDarkMode] = useState("")*/
-
   const [nav, setNav] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+
   const links = [
-    {
-      id: 1,
-      link: "home",
-    },
-    {
-      id: 2,
-      link: "about",
-    },
-    {
-      id: 3,
-      link: "experience",
-    },
-    {
-      id: 4,
-      link: "resume",
-    },
-    {
-      id: 5,
-      link: "contact",
-    },
+    { id: 1, link: "home" },
+    { id: 2, link: "about" },
+    { id: 3, link: "experience" },
+    { id: 4, link: "projects" },
+    { id: 5, link: "contact" },
   ];
 
   return (
-    <header className="z-50 rounded-full flex-wrap w-full h-60 fixed mb-10">
-      
-        <div className="flex justify-between items-center font-bold text-teal-600 bg-black">
-          <div className=" flex md:flex mx-auto bg-gradient-to-br from stroke-stone-900 rounded-full w-10 h-10 mt-30 ml-4 mt-4 overflow-hidden md:h-26 md:w-26">
-            <img src={smous} layout="fill" obejectFit="cover" alt="logo" />
+    <header
+      className={`fixed w-full z-50 transition-all duration-300bg-gray-900 text-white shadow-md rounded-lg bg-black `}
+    >
+      <div className="max-w-screen-lg mx-auto flex justify-between items-center px-4 py-3">
+        {/* Logo */}
+        <div className="flex items-center">
+          <div className="w-12 h-12 rounded-full overflow-hidden">
+            <img src={smous} alt="logo" className="object-cover" />
           </div>
-
-          <ul className="hidden md:flex rounded-full border-collapse shadow-black">
-            {links.map(({ id, link }) => (
-              <li
-                key={id}
-                className="px-4 cursor-pointer capitalize font-semibold text-tear-600 hover:scale-105 duration-200 z-50 "
-              >
-                <Link to={link} smooth duration={500}>
-                  {link}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <div
-            onClick={() => setNav(!nav)}
-            className="cursor-pointer pr-4 z-10 text-teal-600 md:hidden"
-          >
-            {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
-          </div>
-
-          {nav && (
-            <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800">
-              {links.map(({ id, link }) => (
-                <li
-                  key={id}
-                  className="px-4 cursor-pointer capitalize py-6 text-3xl font-semibold"
-                >
-                  <Link
-                    onClick={() => setNav(!nav)}
-                    to={link}
-                    smooth
-                    duration={500}
-                  >
-                    {link}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          )}
+          <h1 className="ml-3 text-xl font-bold">Tlotlang Smous</h1>
         </div>
-      
+
+        {/* Desktop Links */}
+        <ul className="hidden md:flex space-x-6">
+          {links.map(({ id, link }) => (
+            <li
+              key={id}
+              className="capitalize font-medium hover:text-teal-500 transition duration-200"
+            >
+              <Link to={link} smooth duration={500}>
+                {link}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        {/* Dark Mode Toggle */}
+        <button
+          onClick={() => setDarkMode(!darkMode)}
+          className="hidden md:block p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition duration-200"
+        >
+        
+        </button>
+
+        {/* Mobile Menu Icon */}
+        <div
+          onClick={() => setNav(!nav)}
+          className="cursor-pointer md:hidden text-teal-500"
+        >
+          {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      {nav && (
+        <ul
+          className={`flex flex-col items-center absolute top-0 left-0 w-full h-screen ${
+            darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
+          }`}
+        >
+          {links.map(({ id, link }) => (
+            <li
+              key={id}
+              className="capitalize py-6 text-2xl font-medium hover:text-teal-500 transition duration-200"
+            >
+              <Link
+                to={link}
+                smooth
+                duration={500}
+                onClick={() => setNav(false)}
+              >
+                {link}
+              </Link>
+            </li>
+          ))}
+         
+        </ul>
+      )}
     </header>
   );
 };
