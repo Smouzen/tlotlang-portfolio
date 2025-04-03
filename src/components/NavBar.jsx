@@ -17,7 +17,7 @@ const NavBar = () => {
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 bg-gray-900 text-white shadow-md`}
+      className={`fixed w-full z-50 transition-all duration-300 bg-black text-white shadow-md`}
     >
       <div className="max-w-screen-lg mx-auto flex justify-between items-center px-4 py-3">
         {/* Logo */}
@@ -25,7 +25,7 @@ const NavBar = () => {
           <div className="w-12 h-12 rounded-full overflow-hidden">
             <img src={smous} alt="logo" className="object-cover" />
           </div>
-          <h1 className="ml-3 text-xl font-bold">Tlotlang Smous</h1>
+          <h1 className="ml-3 text-xl font-bold hover:text-teal-500">Tlotlang Smous</h1>
         </div>
 
         {/* Desktop Links */}
@@ -63,9 +63,7 @@ const NavBar = () => {
       {/* Mobile Menu */}
       {nav && (
         <ul
-          className={`flex flex-col items-center absolute top-0 left-0 w-full h-screen ${
-            darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
-          }`}
+          className="flex flex-col items-center absolute top-0 left-0 w-full h-screen bg-gray-900 text-white"
         >
           {links.map(({ id, link, icon }) => (
             <li
